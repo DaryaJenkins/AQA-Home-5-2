@@ -28,7 +28,7 @@ class AuthTest {
         $("[data-test-id='password'] input")
                 .setValue(registeredUser.getPassword());
         $("[data-test-id='action-login']").click();
-        $(".App_appContainer__3jRx1")
+        $("#root")
                 .shouldBe(Condition.visible);
     }
 
